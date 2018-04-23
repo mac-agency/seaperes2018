@@ -11,15 +11,23 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/index_costomize_base1.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="resource/lightbox.css" media="screen,tv" />
 </head>
 <body>
+	<ul id="dropdown1" class="dropdown-content">
+  <li><a href="index1.html">無人島ツアー</a></li>
+  <li><a href="#!">ジェットスキーレンタル</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">アクティビティ</a></li>
+</ul>
+	<div class="navbar-fixed">
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo"><img class="responsive-img logo_cyousei" src="images/logo1.svg" alt="シーパワーズ沖縄ロゴ"></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">HOME</a></li>
+        <li><a href="#sample">HOME</a></li>
 				<li><a href="#">おすすめの遊び</a></li>
-				<li><a href="#">プランを選ぶ</a></li>
+				<li><a class="dropdown-trigger" href="#!" data-target="dropdown1">プランを選ぶ<i class="material-icons right">arrow_drop_down</i></a></li>
 				<li><a href="#">スタッフ</a></li>
 				<li><a href="#">写真で見る遊び</a></li>
 				<li><a href="#">おもてなし</a></li>
@@ -28,9 +36,9 @@
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">HOME</a></li>
+        <li><a href="#sample">HOME</a></li>
 				<li><a href="#">おすすめの遊び</a></li>
-				<li><a href="#">プランを選ぶ</a></li>
+				<li><a class="dropdown-trigger" href="#!" data-target="dropdown1">プランを選ぶ<i class="material-icons right">arrow_drop_down</i></a></li>
 				<li><a href="#">スタッフ</a></li>
 				<li><a href="#">写真で見る遊び</a></li>
 				<li><a href="#">おもてなし</a></li>
@@ -40,17 +48,22 @@
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
+	</div>
 
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center teal-text text-lighten-2">Parallax Template</h1>
+        <h1 class="header center teal-text text-lighten-2">沖縄のマリンレジャー</h1>
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="header col s12 light">シーパワーズ沖縄の日帰り離島ツアー大好評！</h5>
         </div>
         <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+          <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">日帰り離島ツアー</a>
+					<a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">アクティビティ</a>
+					<a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">チョイスプラン</a>
+					<a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">バーベキューセット</a>
+					<a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">団体様ツアー</a>
         </div>
         <br><br>
 
@@ -69,7 +82,7 @@
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
+            <h5 class="center">無人島ツアーが楽しめる</h5>
 
             <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
           </div>
@@ -78,7 +91,7 @@
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
+            <h5 class="center">アクティビティ思う存分</h5>
 
             <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
           </div>
@@ -87,7 +100,7 @@
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
+            <h5 class="center">楽しく遊んで美味しく食べる</h5>
 
             <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
           </div>
@@ -102,7 +115,7 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="header col s12 light">オキナワを楽しむのなら断然シーパワーズ沖縄でしょ！</h5>
         </div>
       </div>
     </div>
@@ -110,6 +123,15 @@
 		<div class="parallax pc_non"><img src="images/top_parallax2_sm.jpg" alt="沖縄のマリンレジャーはシーパワーズ沖縄"></div>
   </div>
 
+	
+	<div class="container">
+		<div class="row">
+			<div class="col m3 s6"><a href="images/top_parallax1.jpg" rel="lightbox[sea]"><img class="responsive-img retina" src="images/logo1.svg" alt="サンプル"></a></div>
+			<div class="col m3 s6"><a href="images/top_parallax2.jpg" rel="lightbox[sea]"><img class="responsive-img retina" src="images/logo1.svg" alt="サンプル"></a></div>
+			<div class="col m3 s6"><a href="images/top_parallax3.jpg" rel="lightbox[sea]"><img class="responsive-img retina" src="images/logo1.svg" alt="サンプル"></a></div>
+			<div class="col m3 s6"><a href="images/top_parallax3_sm@2x.jpg" rel="lightbox[sea]"><img class="responsive-img retina" src="images/logo1.svg" alt="サンプル"></a></div>
+		</div>
+	</div>
   <div class="container">
     <div class="section">
 
@@ -123,13 +145,17 @@
 
     </div>
   </div>
+	
+	<div id="sample">
+		<div class="container">サンプルでやんすw</div>
+	</div>
 
 
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="header col s12 light">マリンスポーツの醍醐味を思う存分味わえるシーパワーズ沖縄！</h5>
         </div>
       </div>
     </div>
@@ -137,6 +163,9 @@
 		<div class="parallax pc_non"><img src="images/top_parallax3.jpg" alt="沖縄のマリンレジャーはシーパワーズ沖縄"></div>
   </div>
 
+	<!-- トップに戻るボタン -->
+<div id="page-top" class="material-icons">expand_less</div>
+	
   <footer class="page-footer teal">
     <div class="container">
       <div class="row">
@@ -178,6 +207,40 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+	<script  charset="UTF-8" src="resource/lightbox_plus.js"></script>
+	<!-- ここから上に戻るボタンJavaScript -->
+<script>
 
+//スクロール量を取得する関数
+function getScrolled() {
+ return ( window.pageYOffset !== undefined ) ? window.pageYOffset: document.documentElement.scrollTop;
+}
+
+//トップに戻るボタンの要素を取得
+var topButton = document.getElementById( 'page-top' );
+
+//ボタンの表示・非表示
+window.onscroll = function() {
+  ( getScrolled() > 500 ) ? topButton.classList.add( 'fade-in' ): topButton.classList.remove( 'fade-in' );
+};
+
+//トップに移動する関数
+function scrollToTop() {
+  var scrolled = getScrolled();
+  window.scrollTo( 0, Math.floor( scrolled / 2 ) );
+  if ( scrolled > 0 ) {
+    window.setTimeout( scrollToTop, 30 );
+  }
+};
+
+//イベント登録
+topButton.onclick = function() {
+  scrollToTop();
+};
+
+</script>
+	<script>
+	$(".dropdown-trigger").dropdown();
+	</script>
   </body>
 </html>
